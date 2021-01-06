@@ -201,7 +201,13 @@ const App = (props) => {
     };
 
     await axios
-      .post(URL, body, { crossdomain: true, crossorigin: true })
+      .post(URL, body, {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          crossdomain: "true",
+          crossorigin: "true",
+        },
+      })
       .then((res) => {
         setIsOutputLoading(false);
         console.log(res);
