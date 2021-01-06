@@ -198,6 +198,10 @@ const App = (props) => {
       clientId: CLIENT_ID,
       clientSecret: CLIENT_SECRET,
       stdin: "abc",
+      crossDomain: true,
+      crossorigin: "true",
+      crossdomain: "true",
+      "Access-Control-Allow-Origin": "*",
     };
 
     await axios
