@@ -1,5 +1,9 @@
 .App {
+  padding: 5px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +39,91 @@
   to {
     transform: rotate(360deg);
   }
+}
+.sender {
+  text-align: right;
+  float: right;
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 5px 5px 0px 10px;
+  margin: 2px;
+}
+.receiver {
+  float: left;
+  /* width: max-content; */
+  margin: 2px;
+  text-align: left;
+  border-radius: 5px 5px 10px 0px;
+  word-wrap: normal;
+}
+.messageContainer {
+  color: rgb(246, 246, 246);
+  float: inherit;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: inherit;
+  width: max-content;
+}
+
+.receiver p {
+  background-color: rgb(64, 20, 105);
+}
+.sender p {
+  background-color: blueviolet;
+}
+
+.inputBar {
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  max-width: 400px;
+}
+.inputBar input {
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(54, 22, 85);
+  border-color: blueviolet;
+  border-width: 5px;
+  padding: 6px;
+  height: 20px;
+  border-radius: 25px;
+  outline: none;
+}
+.inputBar button {
+  font-size: 15px;
+  color: #ffffff;
+  background-color: blueviolet;
+  border-color: blueviolet;
+  border-width: 5px;
+  padding: 6px;
+
+  border-radius: 25px;
+  outline: none;
+}
+
+.chatContainer {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.chatContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.sender #msgTime {
+  float: right;
+  color: #282c34 !important;
+  font-size: 4px !important;
+  width: max-content !important;
+  background-color: transparent !important;
+  font-style: italic !important;
+}
+
+.receiver #msgTime {
+  float: left;
+  color: #282c34 !important;
+  font-size: 4px !important;
+  width: max-content !important;
+  background-color: transparent !important;
+  font-style: italic !important;
 }
