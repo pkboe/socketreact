@@ -205,7 +205,7 @@ const App = (props) => {
     };
 
     await axios
-      .post(URL, body, {
+      .post("https://cors-anywhere.herokuapp.com/" + URL, body, {
         headers: {
           "Access-Control-Allow-Origin": "*",
           crossdomain: "true",
