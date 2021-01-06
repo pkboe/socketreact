@@ -201,7 +201,7 @@ const App = (props) => {
     };
 
     await axios
-      .post(URL, body, { crossdomain: true })
+      .post(URL, body, { crossdomain: true, crossorigin: true })
       .then((res) => {
         setIsOutputLoading(false);
         console.log(res);
