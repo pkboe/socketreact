@@ -22,8 +22,53 @@ const Main = (props) => {
 
   return (
     <div className="App Main">
-      <h1>Main Component</h1>
-      {Connected ? <p>Welcome from server!</p> : <p>Not connected yet...</p>}
+      <h1>Welcome! 👋</h1>
+      {Connected ? (
+        <h2 style={{ color: "lime" }}>Welcome from server!</h2>
+      ) : (
+        <h2 style={{ color: "tomato" }}>Not connected yet...</h2>
+      )}
+      <div className="Notice">
+        <h2>Why You Seeing This ? 🤔 </h2>
+        <h5>
+          Well, This page is made to check whether the socket connnection made
+          from SERVER to CIENT.
+        </h5>
+        <br />
+        <h2>To Check It : </h2>
+        <h6>
+          <ul
+            style={{
+              textAlign: "left",
+              fontFamily: "monospace",
+              color: "lime",
+              backgroundColor: "black",
+              borderWidth: "5px",
+              borderStyle: "solid",
+              borderColor: "grey",
+              borderRadius: "5px",
+              fontSize: "14px",
+              minHeight: "120px",
+            }}
+          >
+            <li>Consider Any Of The Instances FIX</li>
+            <li>Open Terminal / Console </li>
+            <li>Create Multiple Instances Of THIS Site.</li>
+            <li>
+              And Now While Observing The Dev Console Check Whether The ID's Are
+              getting changed.
+            </li>
+          </ul>
+          <h2>What You Have To Check Here ? </h2>
+          <h3>
+            THE ONE TAB YOU DELETE OR EITHER ADD, REMAINING IDs Must BE INTACT.
+            AND ONLY THE SAME ORDER HAS BEEN CHANGED.
+          </h3>
+
+          <br />
+          <h1>Thank You!</h1>
+        </h6>
+      </div>
     </div>
   );
 };

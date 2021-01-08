@@ -127,3 +127,10 @@
   background-color: transparent !important;
   font-style: italic !important;
 }
+
+.Notice {
+  border: 5px solid tomato;
+  border-radius: 20px;
+  width: min-content;
+  min-width: 320px;
+}
