@@ -1,3 +1,3 @@
-const SOCKET_URL = "http://localhost:4001";
+const SOCKET_URL = "https://mocksocketserver.herokuapp.com/";
 
 export { SOCKET_URL };
