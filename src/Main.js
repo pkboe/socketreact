@@ -32,7 +32,7 @@ const Main = (props) => {
         <h2>Why You Seeing This ? 🤔 </h2>
         <h5>
           Well, This page is made to check whether the socket connnection made
-          from SERVER to CIENT.
+          from SERVER to CLIENT is Consistant Or Not On various devices.
         </h5>
         <br />
         <h2>To Check It : </h2>
