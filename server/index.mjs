@@ -31,9 +31,9 @@ io.on("connection", (socket) => {
   socket.on("disconnect", () => {
     //its a diffrent callback parameter
     delete clients[socket.id];
-    console.log("All Clients On A USER DISCONNECTED : ", clients);
+    console.log("All Clients On A USER DISCONNECTED : ", { clients });
     console.log("user disconnected : ", socket.id);
-    io.sockets.emit("A_CLIENT_LEFT", clients);
+    io.sockets.emit("A_CLIENT_LEFT", { clients });
   });
 
   socket.on("room", (data) => {
@@ -49,7 +49,8 @@ io.on("connection", (socket) => {
   });
 
   socket.on("HELLO_THERE", () => {
-    clients[socket.id] = ++connectCounter;
+    var clientRemoteAddress = socket.request.headers;
+    clients[socket.id] = clientRemoteAddress;
     console.log("All Clients On HELLO THERE : ", clients);
     io.sockets.emit("A_CLIENT_CONNECTED", clients);
     socket.emit("WELCOME_FROM_SERVER");
