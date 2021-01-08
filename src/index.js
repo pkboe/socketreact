@@ -1,14 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+// import App from "./App";
+import Main from "./Main";
 import { MemoryRouter } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
     <MemoryRouter>
-      <App />
+      {/* <App /> */}
+      <Main />
     </MemoryRouter>
   </React.StrictMode>,
   document.getElementById("root")

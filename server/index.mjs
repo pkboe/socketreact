@@ -8,7 +8,8 @@ const io = new Server(httpServer, {
     methods: ["GET", "POST"],
   },
 });
-
+var clients = {};
+var connectCounter = 0;
 // io.on("connection", (socket) => {
 //   console.log(
 //     "User Joined: " +
@@ -27,8 +28,12 @@ const io = new Server(httpServer, {
 io.on("connection", (socket) => {
   console.log("a user connected");
 
-  socket.on("disconnect", (reason) => {
-    console.log("user disconnected");
+  socket.on("disconnect", () => {
+    //its a diffrent callback parameter
+    delete clients[socket.id];
+    console.log("All Clients On A USER DISCONNECTED : ", clients);
+    console.log("user disconnected : ", socket.id);
+    io.sockets.emit("A_CLIENT_LEFT", clients);
   });
 
   socket.on("room", (data) => {
@@ -43,6 +48,13 @@ io.on("connection", (socket) => {
     socket.leave(data.room);
   });
 
+  socket.on("HELLO_THERE", () => {
+    clients[socket.id] = ++connectCounter;
+    console.log("All Clients On HELLO THERE : ", clients);
+    io.sockets.emit("A_CLIENT_CONNECTED", clients);
+    socket.emit("WELCOME_FROM_SERVER");
+  });
+
   socket.on("new message", (data) => {
     console.log("new Massage" + socket.id);
     console.log(data.room);
@@ -50,4 +62,4 @@ io.on("connection", (socket) => {
   });
 });
 
-httpServer.listen(4001);
+httpServer.listen(3001);
