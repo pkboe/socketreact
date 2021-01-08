@@ -62,7 +62,6 @@ const Main = (props) => {
           <h2>What You Have To Check Here ? </h2>
           <h3>
             THE ONE TAB YOU DELETE OR EITHER ADD, REMAINING IDs Must BE INTACT.
-            AND ONLY THE SAME ORDER HAS BEEN CHANGED.
           </h3>
 
           <br />
