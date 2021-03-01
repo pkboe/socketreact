@@ -203,14 +203,14 @@ const App = (props) => {
     };
 
     await axios
-      .post(URL, body, {
+      .post("https://api.jdoodle.com/" + URL, body, {
         crossDomain: true,
         headers: {
           "Access-Control-Allow-Origin": "*",
           crossdomain: "true",
           crossorigin: "true",
         },
-        proxy: { host: "https://api.jdoodle.com/" },
+        // proxy: { host: "https://api.jdoodle.com/" },
       })
       .then((res) => {
         setIsOutputLoading(false);
