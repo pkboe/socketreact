@@ -1,5 +1,6 @@
 import { socket } from "./service/socket";
 import "./App.css";
+import LoadingGif from "./Components/LoadingGif";
 import { useEffect, useState } from "react";
 const Main = (props) => {
   const [Connected, setConnected] = useState(false);
@@ -26,7 +27,10 @@ const Main = (props) => {
       {Connected ? (
         <h2 style={{ color: "lime" }}>Welcome from server!</h2>
       ) : (
-        <h2 style={{ color: "tomato" }}>Not connected yet...</h2>
+        <h2 style={{ color: "tomato", display: "flex", alignItems: "center" }}>
+          Connecting...
+          <LoadingGif />
+        </h2>
       )}
       <div className="Notice">
         <h2>Why You Seeing This ? 🤔 </h2>

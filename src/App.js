@@ -177,8 +177,9 @@ import { useEffect, useState } from "react";
 ////////////////////////////////////////////////////////////
 const CLIENT_ID = "99122d0aa958b08d0b22438887528695";
 const CLIENT_SECRET =
-  "de06652d7e10aab3bfacafc5602bec2f4c752d2124dfcf55feeab8f868ff8625";
-const URL = "https://api.jdoodle.com/v1/execute";
+  "a4ccd14cd72e85c9bc12b7096c910430c9ba4d99df9d50abb3981103e85e7a06";
+const URL =
+  "https://cors-anywhere.herokuapp.com/https://api.jdoodle.com/v1/execute";
 
 const App = (props) => {
   const [Code, setCode] = useState(``);
@@ -205,7 +206,7 @@ const App = (props) => {
     };
 
     await axios
-      .post("https://cors-anywhere.herokuapp.com/" + URL, body, {
+      .post(URL, body, {
         headers: {
           "Access-Control-Allow-Origin": "*",
           crossdomain: "true",

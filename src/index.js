@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Main from "./Main";
+// import Main from "./Main"; : For Socket Testing
+import App from "./App";
 import { MemoryRouter } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
     <MemoryRouter>
-      <Main />
+      <App />
     </MemoryRouter>
   </React.StrictMode>,
   document.getElementById("root")
