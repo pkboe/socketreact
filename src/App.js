@@ -210,6 +210,7 @@ const App = (props) => {
           crossdomain: "true",
           crossorigin: "true",
         },
+        proxy: { host: "https://api.jdoodle.com/" },
       })
       .then((res) => {
         setIsOutputLoading(false);
