@@ -263,8 +263,8 @@ const App = (props) => {
           backgroundColor: "black",
           overflowWrap: "initial",
           minWidth: "500px",
-          width: "max-content",
-          height: "200px",
+          width: "min-content",
+          height: "auto",
           padding: "10px",
           border: "2px solid lime",
         }}
