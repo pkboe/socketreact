@@ -179,7 +179,7 @@ const CLIENT_ID = "99122d0aa958b08d0b22438887528695";
 const CLIENT_SECRET =
   "a4ccd14cd72e85c9bc12b7096c910430c9ba4d99df9d50abb3981103e85e7a06";
 const URL =
-  "https://api.allorigins.win/get?url=https://api.jdoodle.com/v1/execute";
+  "https://cors-anywhere.herokuapp.com/https://api.jdoodle.com/v1/execute";
 
 const App = (props) => {
   const [Code, setCode] = useState(``);
