@@ -228,65 +228,75 @@ const App = (props) => {
   return (
     <div className="App">
       {/* <Participents /> */}
-      <h3>URL Using : {URL}</h3>
-      <AceEditor
-        enableBasicAutocompletion={true}
-        enableLiveAutocompletion={true}
-        enableSnippets={true}
-        value={Code}
-        onChange={(value) => {
-          setCode(value);
-        }}
-        mode="python"
-        theme="terminal"
-      />
-
-      <button
-        id="codeSubmitButton"
-        className="codeSubmitButton"
-        disabled={isOutputLoading}
-        onClick={() => {
-          console.log(Code);
-          handleCodeSubmit();
-        }}
-        style={{
-          backgroundColor: "lime",
-          color: "white",
-          borderRadius: 15,
-          height: 45,
-          width: "max-content",
-          transition: "1s",
-          fontSize: 17,
-          textAlign: "center",
-          outline: "none",
-        }}
-      >
-        {isOutputLoading && "Please Wait"}
-        {!isOutputLoading && "Submit"}
-      </button>
-      {/* <Participents /> */}
+      <h6>URL Using : {URL}</h6>
       <div
+        className="App"
         style={{
-          backgroundColor: "black",
-          overflowWrap: "initial",
-          minWidth: "500px",
-          width: "min-content",
-          height: "auto",
-          padding: "10px",
-          border: "2px solid lime",
+          border: "15px solid lime",
+          padding: "0px",
+          borderRadius: "20px",
+          boxShadow: "0 0px 20px #006600",
         }}
       >
-        <h4
+        <AceEditor
+          enableBasicAutocompletion={true}
+          enableLiveAutocompletion={true}
+          enableSnippets={true}
+          value={Code}
+          onChange={(value) => {
+            setCode(value);
+          }}
+          mode="python"
+          theme="terminal"
+          style={{ width: "100%" }}
+        />
+
+        <button
+          id="codeSubmitButton"
+          className="codeSubmitButton"
+          disabled={isOutputLoading}
+          onClick={() => {
+            console.log(Code);
+            handleCodeSubmit();
+          }}
           style={{
-            color: "lime",
-            fontFamily: "monospace",
-            textAlign: "left",
+            backgroundColor: "yellow",
+            color: "black",
+            height: 45,
+            width: "100%",
+            transition: "1s",
+            fontSize: 22,
+            textAlign: "center",
+            outline: "none",
           }}
         >
-          {" "}
-          Code OutPut `Configured In Python For Testing Purpose ` : <br />{" "}
-          {">" + Output}
-        </h4>
+          {isOutputLoading && "Please Wait"}
+          {!isOutputLoading && "Execute"}
+        </button>
+        {/* <Participents /> */}
+        <div
+          style={{
+            backgroundColor: "black",
+            overflowWrap: "break-word",
+            width: "500px",
+            height: "auto",
+            padding: "10px",
+            border: "2px solid lime",
+          }}
+        >
+          <p
+            style={{
+              color: "lime",
+              fontFamily: "monospace",
+              textAlign: "left",
+              fontSize: 17,
+            }}
+          >
+            {" "}
+            Code OutPut `Configured In Python For Testing Purpose ` : <br />{" "}
+            {">" + Output}
+          </p>
+        </div>
       </div>
     </div>
   );
