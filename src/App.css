@@ -134,3 +134,10 @@
   width: min-content;
   min-width: 320px;
 }
+
+.codeSubmitButton:disabled,
+.codeSubmitButton.disabled {
+  background-color: red !important;
+  content: "Please Wait" !important;
+  color: white !important;
+}

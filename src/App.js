@@ -239,23 +239,27 @@ const App = (props) => {
       />
 
       <button
-        hidden={isOutputLoading}
+        id="codeSubmitButton"
+        className="codeSubmitButton"
+        disabled={isOutputLoading}
         onClick={() => {
           console.log(Code);
           handleCodeSubmit();
         }}
         style={{
-          backgroundColor: "blueviolet",
+          backgroundColor: "lime",
+          color: "white",
           borderRadius: 15,
           height: 45,
-          width: 70,
-
+          width: "max-content",
+          transition: "1s",
           fontSize: 17,
           textAlign: "center",
           outline: "none",
         }}
       >
-        Submit
+        {isOutputLoading && "Please Wait"}
+        {!isOutputLoading && "Submit"}
       </button>
       {/* <Participents /> */}
       <div
