@@ -178,8 +178,7 @@ import { useEffect, useState } from "react";
 const CLIENT_ID = "99122d0aa958b08d0b22438887528695";
 const CLIENT_SECRET =
   "a4ccd14cd72e85c9bc12b7096c910430c9ba4d99df9d50abb3981103e85e7a06";
-const URL =
-  "https://cors-anywhere.herokuapp.com/https://api.jdoodle.com/v1/execute";
+const URL = "v1/execute";
 
 const App = (props) => {
   const [Code, setCode] = useState(``);
@@ -199,9 +198,6 @@ const App = (props) => {
       clientId: CLIENT_ID,
       clientSecret: CLIENT_SECRET,
       stdin: "abc",
-      crossDomain: true,
-      crossorigin: "true",
-      crossdomain: "true",
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "application/json",
     };
