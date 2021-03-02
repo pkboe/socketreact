@@ -290,7 +290,7 @@ const App = (props) => {
             }}
           >
             {" "}
-            Code OutPut `Configured In Python For Testing Purpose ` : <br />{" "}
+            Code OutPutt `Configured In Python For Testing Purpose ` : <br />{" "}
             {">" + Output}
           </p>
         </div>
