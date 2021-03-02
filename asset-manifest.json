@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/socketreact/static/css/main.d9235a23.chunk.css",
+    "main.js": "/socketreact/static/js/main.cf455d90.chunk.js",
+    "main.js.map": "/socketreact/static/js/main.cf455d90.chunk.js.map",
+    "runtime-main.js": "/socketreact/static/js/runtime-main.b01db6bd.js",
+    "runtime-main.js.map": "/socketreact/static/js/runtime-main.b01db6bd.js.map",
+    "static/js/2.bb65f995.chunk.js": "/socketreact/static/js/2.bb65f995.chunk.js",
+    "static/js/2.bb65f995.chunk.js.map": "/socketreact/static/js/2.bb65f995.chunk.js.map",
+    "static/js/3.91c916cb.chunk.js": "/socketreact/static/js/3.91c916cb.chunk.js",
+    "static/js/3.91c916cb.chunk.js.map": "/socketreact/static/js/3.91c916cb.chunk.js.map",
+    "index.html": "/socketreact/index.html",
+    "static/css/main.d9235a23.chunk.css.map": "/socketreact/static/css/main.d9235a23.chunk.css.map",
+    "static/js/2.bb65f995.chunk.js.LICENSE.txt": "/socketreact/static/js/2.bb65f995.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b01db6bd.js",
+    "static/js/2.bb65f995.chunk.js",
+    "static/css/main.d9235a23.chunk.css",
+    "static/js/main.cf455d90.chunk.js"
+  ]
+}
