@@ -1,7 +1,6 @@
 {
   "name": "socketreact",
   "version": "0.1.0",
-  "private": true,
   "proxy": "https://api.jdoodle.com/",
   "homepage": "https://pkboe.github.io/SIBCodeTest",
   "dependencies": {
