@@ -2,7 +2,7 @@
   "name": "socketreact",
   "version": "0.1.0",
   "proxy": "https://api.jdoodle.com/",
-  "homepage": "https://pkboe.github.io/SIBCodeTest",
+  "homepage": "https://pkboe.github.io/socketreact",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
