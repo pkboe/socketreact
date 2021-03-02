@@ -278,7 +278,7 @@ const App = (props) => {
             width: "500px",
             height: "auto",
             padding: "10px",
-            border: "2px solid lime",
+            border: "2px solid green",
           }}
         >
           <p
