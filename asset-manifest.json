@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/socketreact/static/css/main.d9235a23.chunk.css",
-    "main.js": "/socketreact/static/js/main.490a6df2.chunk.js",
-    "main.js.map": "/socketreact/static/js/main.490a6df2.chunk.js.map",
+    "main.js": "/socketreact/static/js/main.c48c9e7e.chunk.js",
+    "main.js.map": "/socketreact/static/js/main.c48c9e7e.chunk.js.map",
     "runtime-main.js": "/socketreact/static/js/runtime-main.b01db6bd.js",
     "runtime-main.js.map": "/socketreact/static/js/runtime-main.b01db6bd.js.map",
     "static/js/2.bb65f995.chunk.js": "/socketreact/static/js/2.bb65f995.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b01db6bd.js",
     "static/js/2.bb65f995.chunk.js",
     "static/css/main.d9235a23.chunk.css",
-    "static/js/main.490a6df2.chunk.js"
+    "static/js/main.c48c9e7e.chunk.js"
   ]
 }
