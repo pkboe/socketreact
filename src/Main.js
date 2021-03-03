@@ -44,6 +44,7 @@ const Main = (props) => {
           <ul
             style={{
               textAlign: "left",
+
               fontFamily: "monospace",
               color: "lime",
               backgroundColor: "black",
