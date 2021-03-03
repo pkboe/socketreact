@@ -1,0 +1,1 @@
+def check(p): sq = p * p while (p > 0): if (p % 10 != sq % 10): return False p = int(p/10) sq = int(sq/10) return True num = int(input()) if(num > 0): if(check(num)): print("Correct Number") else: print("Incorrect Number") else: print("Wrong Input")
